@@ -1,0 +1,100 @@
+@font-face {
+    font-family: Poppins;
+    src: url(Assets/Poppins-Regular.ttf);
+}
+
+body {
+    font-family: Poppins;
+}
+
+h1, h2, p {
+    margin: 10px;
+}
+
+#container { 
+    display: flex;
+    height: 100vh;
+}
+
+#container > div {
+    padding: 20px;
+    flex: 1 1 0;
+}
+
+#title {
+    background: url(Assets/Main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+}
+
+#form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    color: #b7b7b7;
+    font-size: 0.7rem;
+}
+
+a {
+    color: #01B0D2;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+}
+
+input {    
+    font-size: 0.7rem;
+    padding: 8px;
+    width: auto;
+    margin: 7px 0 18px 0;
+}
+
+label {
+    font-weight: bold;
+    font-size: 0.7rem;
+}
+
+input:focus {
+    outline-color: #01B0D2;
+}
+
+#form-buttons {
+    margin-top: 8%;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    font-size: 0.6rem;
+    text-align: center;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#register-button {
+    background-color: #01B0D2;
+    border: none;
+    color: #fff;
+}
+
+#google-button {
+    background-color: #fff;
+    border: none;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+button>img {
+    height: 0.7rem;
+}
