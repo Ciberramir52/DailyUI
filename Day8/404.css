@@ -1,0 +1,121 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+}
+
+.message h1 {
+    font-size: 3rem;
+    color: #ff6b6b;
+    margin-bottom: 20px;
+}
+
+.message p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e55b5b;
+}
+
+/* Animation area */
+.animation {
+    position: relative;
+    margin: 40px 0;
+}
+
+.rocket {
+    width: 120px;
+    animation: rocketMove 5s infinite;
+}
+
+.planet {
+    width: 250px;
+    height: 250px;
+    background-color: #e55b5b;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+    animation: planetRotate 10s infinite linear;
+}
+
+.crater {
+    width: 30px;
+    height: 30px;
+    background-color: #ff6b6b;
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    animation: craterMove 2s infinite;
+}
+
+.crater:nth-child(2) {
+    top: 65%;
+    left: 20%;
+}
+
+.crater:nth-child(3) {
+    top: 40%;
+    left: 70%;
+}
+
+@keyframes rocketMove {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes planetRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes craterMove {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

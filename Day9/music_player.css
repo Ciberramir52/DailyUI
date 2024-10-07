@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+.music-player {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.album-art img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.song-info {
+    margin-bottom: 10px;
+}
+
+.song-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.song-info p {
+    font-size: 1rem;
+    color: #b3b3b3;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.control-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.control-btn:hover {
+    color: #1db954; /* Spotify green-like hover effect */
+}
+
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#progress-bar {
+    width: 100%;
+    margin: 0 10px;
+}
+
+.volume-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#volume {
+    width: 100px;
+    margin-left: 5px;
+}

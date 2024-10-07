@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Sidebar Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Settings</h2>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="#" class="active" data-setting="appearance">Appearance</a></li>
+                    <li><a href="#" data-setting="security">Security</a></li>
+                    <li><a href="#" data-setting="notifications">Notifications</a></li>
+                    <li><a href="#" data-setting="privacy">Privacy</a></li>
+                    <li><a href="#" data-setting="system">System</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <section class="settings-content">
+            <!-- Default active content -->
+            <div id="appearance-settings" class="setting-panel active">
+                <h1>Appearance</h1>
+                <div class="setting-item">
+                    <label>Theme</label>
+                    <div>
+                        <button id="light-mode-btn" class="btn active">Light Mode</button>
+                        <button id="dark-mode-btn" class="btn">Dark Mode</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Security settings -->
+            <div id="security-settings" class="setting-panel">
+                <h1>Security</h1>
+                <div class="setting-item">
+                    <label>Password</label>
+                    <button class="btn">Change Password</button>
+                </div>
+                <div class="setting-item">
+                    <label>Two-Factor Authentication</label>
+                    <button class="btn">Enable</button>
+                </div>
+            </div>
+
+            <!-- Notifications settings -->
+            <div id="notifications-settings" class="setting-panel">
+                <h1>Notifications</h1>
+                <div class="setting-item">
+                    <label>Push Notifications</label>
+                    <input type="checkbox" checked>
+                </div>
+                <div class="setting-item">
+                    <label>Email Notifications</label>
+                    <input type="checkbox">
+                </div>
+            </div>
+
+            <!-- Privacy settings -->
+            <div id="privacy-settings" class="setting-panel">
+                <h1>Privacy</h1>
+                <div class="setting-item">
+                    <label>Location Access</label>
+                    <input type="checkbox">
+                </div>
+                <div class="setting-item">
+                    <label>Data Sharing</label>
+                    <input type="checkbox">
+                </div>
+            </div>
+
+            <!-- System settings -->
+            <div id="system-settings" class="setting-panel">
+                <h1>System</h1>
+                <div class="setting-item">
+                    <label>Language</label>
+                    <select>
+                        <option value="en">English</option>
+                        <option value="es">Spanish</option>
+                    </select>
+                </div>
+                <div class="setting-item">
+                    <label>Time Zone</label>
+                    <select>
+                        <option value="utc">UTC</option>
+                        <option value="est">EST</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
