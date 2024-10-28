@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onboarding Process</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Your New Journey!</h1>
+        <p>Let us guide you through your first steps to get started.</p>
+    </header>
+
+    <!-- Progress Bar -->
+    <section class="progress-container">
+        <div class="progress-bar">
+            <div class="step active">1</div>
+            <div class="step">2</div>
+            <div class="step">3</div>
+        </div>
+    </section>
+
+    <!-- Onboarding Step Content -->
+    <section id="onboarding-content">
+        <div class="step-content" id="step-1">
+            <h2>Step 1: Introduction</h2>
+            <p>We’re excited to have you with us! Let's get started by learning a bit more about you.</p>
+            <button onclick="nextStep()">Next</button>
+        </div>
+
+        <div class="step-content hidden" id="step-2">
+            <h2>Step 2: Service Overview</h2>
+            <p>Discover how our service can help you achieve your goals. We offer personalized tools and support.</p>
+            <button onclick="nextStep()">Next</button>
+        </div>
+
+        <div class="step-content hidden" id="step-3">
+            <h2>Step 3: Confirmation</h2>
+            <p>You’re all set! Explore your dashboard and take control of your experience with us.</p>
+            <button onclick="completeOnboarding()">Get Started</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Company Name</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

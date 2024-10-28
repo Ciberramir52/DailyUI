@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Find Your Perfect Stay</h1>
+        <p>Search hotels across the globe with our easy-to-use search tool!</p>
+    </header>
+
+    <section class="search-container">
+        <form id="hotel-search-form">
+            <!-- Search by City -->
+            <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" id="city" placeholder="Enter city name" required>
+            </div>
+
+            <!-- Check-In Date -->
+            <div class="form-group">
+                <label for="check-in">Check-In</label>
+                <input type="date" id="check-in" required>
+            </div>
+
+            <!-- Check-Out Date -->
+            <div class="form-group">
+                <label for="check-out">Check-Out</label>
+                <input type="date" id="check-out" required>
+            </div>
+
+            <!-- Number of Guests -->
+            <div class="form-group">
+                <label for="guests">Guests</label>
+                <input type="number" id="guests" min="1" max="10" value="1" required>
+            </div>
+
+            <!-- Room Type -->
+            <div class="form-group">
+                <label for="room-type">Room Type</label>
+                <select id="room-type">
+                    <option value="single">Single Room</option>
+                    <option value="double">Double Room</option>
+                    <option value="suite">Suite</option>
+                    <option value="family">Family Room</option>
+                </select>
+            </div>
+
+            <!-- Search Button -->
+            <div class="form-group">
+                <button type="submit">Search Hotels</button>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Hotel Searcher</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

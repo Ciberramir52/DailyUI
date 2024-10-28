@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direct Messaging App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="chat-container">
+        <!-- User Profile Section -->
+        <section class="profile-section">
+            <div class="user-profile">
+                <img src="Assets/profile.jpg" alt="User Image" class="profile-img">
+                <h3>John Doe</h3>
+                <p>Online</p>
+            </div>
+            <div class="contacts">
+                <h4>Contacts</h4>
+                <ul>
+                    <li class="contact-item">Jane Smith</li>
+                    <li class="contact-item">Mark Wilson</li>
+                    <li class="contact-item">Emily Johnson</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Chat Section -->
+        <section class="chat-section">
+            <div class="chat-header">
+                <h3>Chat with Jane Smith</h3>
+            </div>
+            <div class="chat-box">
+                <div class="message received">
+                    <p>Hey, how are you?</p>
+                    <span class="time">12:01 PM</span>
+                </div>
+                <div class="message sent">
+                    <p>I'm good, thanks! How about you?</p>
+                    <span class="time">12:02 PM</span>
+                </div>
+                <div class="message received">
+                    <p>I'm doing well. Been busy lately.</p>
+                    <span class="time">12:03 PM</span>
+                </div>
+            </div>
+
+            <!-- Input Box -->
+            <div class="input-section">
+                <input type="text" id="message-input" placeholder="Type a message..." />
+                <button id="send-btn">Send</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Refrigerator Control Panel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Smart Refrigerator Control Panel</h1>
+
+        <!-- Display current temperature -->
+        <div class="temperature-display">
+            <h2>Temperature</h2>
+            <p id="current-temp">34°F</p>
+            <div class="temp-controls">
+                <button class="btn" id="temp-down">-</button>
+                <button class="btn" id="temp-up">+</button>
+            </div>
+        </div>
+
+        <!-- Toggle Switches for Features -->
+        <div class="controls">
+            <div class="control-item">
+                <label for="freezer-toggle">Freezer</label>
+                <input type="checkbox" id="freezer-toggle" class="toggle-switch">
+            </div>
+
+            <div class="control-item">
+                <label for="cooling-toggle">Cooling</label>
+                <input type="checkbox" id="cooling-toggle" class="toggle-switch">
+            </div>
+
+            <div class="control-item">
+                <label for="lights-toggle">Lights</label>
+                <input type="checkbox" id="lights-toggle" class="toggle-switch">
+            </div>
+
+            <div class="control-item">
+                <label for="alarm-toggle">Door Alarm</label>
+                <input type="checkbox" id="alarm-toggle" class="toggle-switch">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

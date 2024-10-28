@@ -1,0 +1,130 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Boarding Pass Container */
+.boarding-pass {
+    width: 350px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-top: 10px solid #0078D7;
+    border-bottom: 10px solid #0078D7;
+}
+
+/* Header */
+.pass-header {
+    background-color: #0078D7;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.pass-header h1 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.pass-header .flight {
+    font-size: 16px;
+}
+
+/* Main Body */
+.pass-body {
+    padding: 20px;
+}
+
+/* Flight Locations */
+.location-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.location {
+    text-align: center;
+}
+
+.location span {
+    font-size: 12px;
+    color: #999;
+}
+
+.location h2 {
+    font-size: 36px;
+    margin: 5px 0;
+}
+
+.location p {
+    font-size: 12px;
+    color: #555;
+}
+
+/* Flight Details */
+.info-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.info-details div {
+    text-align: center;
+}
+
+.info-details span {
+    font-size: 12px;
+    color: #999;
+}
+
+.info-details p {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Additional Information */
+.additional-info {
+    text-align: center;
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Footer - Barcode Section */
+.pass-footer {
+    padding: 10px 0;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.barcode {
+    background: repeating-linear-gradient(
+        90deg,
+        black,
+        black 2px,
+        white 2px,
+        white 5px
+    );
+    height: 60px;
+    width: 250px;
+    margin: 0 auto 10px;
+}
+
+.pass-footer p {
+    font-size: 12px;
+    color: #999;
+}
+    

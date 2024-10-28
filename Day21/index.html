@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Monitoring Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <h1>Home Monitoring Dashboard</h1>
+        </header>
+
+        <section class="monitoring-grid">
+            <!-- Temperature Monitoring -->
+            <div class="monitoring-card">
+                <h2>Temperature</h2>
+                <div class="monitoring-value" id="temperature">
+                    <p>22°C</p>
+                </div>
+            </div>
+
+            <!-- Security Monitoring -->
+            <div class="monitoring-card">
+                <h2>Security</h2>
+                <div class="monitoring-value" id="security-status">
+                    <p>Armed</p>
+                </div>
+            </div>
+
+            <!-- Lighting Control -->
+            <div class="monitoring-card">
+                <h2>Lighting</h2>
+                <div class="monitoring-value" id="lighting-status">
+                    <button id="toggle-lights">Toggle Lights</button>
+                    <p>Lights are OFF</p>
+                </div>
+            </div>
+
+            <!-- Energy Consumption -->
+            <div class="monitoring-card">
+                <h2>Energy Consumption</h2>
+                <div class="monitoring-value" id="energy-consumption">
+                    <p>120 kWh</p>
+                </div>
+            </div>
+
+            <!-- Door/Window Monitoring -->
+            <div class="monitoring-card">
+                <h2>Doors & Windows</h2>
+                <div class="monitoring-value" id="doors-windows-status">
+                    <p>All Secure</p>
+                </div>
+            </div>
+
+            <!-- Motion Sensors -->
+            <div class="monitoring-card">
+                <h2>Motion Sensors</h2>
+                <div class="monitoring-value" id="motion-sensors">
+                    <p>No Motion Detected</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Home Monitoring Inc.</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

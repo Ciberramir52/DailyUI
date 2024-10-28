@@ -1,0 +1,78 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #2d72d9;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.dashboard-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Monitoring Grid */
+.monitoring-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Monitoring Card */
+.monitoring-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.monitoring-card h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.monitoring-value {
+    margin-top: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+/* Button Styling */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #2d72d9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1c57a1;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #999;
+}

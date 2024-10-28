@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Sign-Up Pop-up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Main Content of the page -->
+    <div class="main-content">
+        <h1>Welcome to Our Website</h1>
+        <p>Enjoy browsing our content. Sign up for our newsletter to stay updated!</p>
+        <button id="open-popup" class="open-popup-btn">Subscribe to Newsletter</button>
+    </div>
+
+    <!-- Pop-up Overlay -->
+    <div id="popup-overlay" class="popup-overlay">
+        <div class="popup">
+            <button id="close-popup" class="close-popup">&times;</button>
+            <h2>Sign Up for Our Newsletter</h2>
+            <form id="signup-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <button type="submit" class="submit-btn">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

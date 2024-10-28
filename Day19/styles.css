@@ -1,0 +1,81 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.leaderboard-container {
+    width: 80%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+ul#leaderboard {
+    list-style-type: none;
+    padding: 0;
+}
+
+li.leaderboard-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+li.leaderboard-item:hover {
+    transform: translateY(-3px);
+}
+
+.leaderboard-item .player-info {
+    display: flex;
+    align-items: center;
+}
+
+.leaderboard-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.leaderboard-item .player-name {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.leaderboard-item .player-score {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.leaderboard-item .rank {
+    font-size: 24px;
+    font-weight: 700;
+    color: #e74c3c;
+}

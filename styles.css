@@ -62,6 +62,11 @@ main {
     transition: transform 0.3s ease;
 }
 
+.project-card img {
+    height: 300px;
+    width: 100%;
+}
+
 .project-card:hover {
     transform: translateY(-10px);
 }
@@ -117,23 +122,17 @@ footer {
 
 @media (max-width: 1000px) {
     .projects-grid {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media (max-width: 800px) {
     .projects-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (max-width: 600px) {
-    .projects-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     .projects-grid {
         grid-template-columns: 1fr; /* 1 column for very small screens */
     }
